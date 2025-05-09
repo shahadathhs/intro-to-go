@@ -2,6 +2,20 @@ package main
 
 import "fmt"
 
+func sum(a int, b int) int {
+	return a + b
+}
+
+func getNumbers (a int, b int) (int, int) {
+	sum := a + b
+	mul := a * b
+	return sum, mul
+}
+
+func printSomething() {
+	fmt.Println("Hello World")
+}
+
 func main() {
 	// fmt.Println("Hello World")
 
@@ -68,16 +82,31 @@ func main() {
 	// 	fmt.Println("You are not 20")
 	// }
 
-	age := 21
-	// switch case
-	switch age {
-	case 10:
-		fmt.Println("10")
-	case 20:
-		fmt.Println("20")
-	case 30:
-		fmt.Println("30")
-	default:
-		fmt.Println("default")
-	}
+	// age := 21
+	// // switch case
+	// switch age {
+	// case 10:
+	// 	fmt.Println("10")
+	// case 20:
+	// 	fmt.Println("20")
+	// case 30:
+	// 	fmt.Println("30")
+	// default:
+	// 	fmt.Println("default")
+	// }
+
+	a := 1
+	b := 2
+	c := 3
+	d := 4
+
+	fmt.Println(sum(a, b))
+
+	sum2 := sum(c, d)
+	fmt.Println(sum2)
+
+	sum, mul := getNumbers(a, b)
+	fmt.Println(sum, mul)
+
+	printSomething()
 }
