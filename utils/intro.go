@@ -6,7 +6,7 @@ func sum(a int, b int) int {
 	return a + b
 }
 
-func getNumbers (a int, b int) (int, int) {
+func getNumbers(a int, b int) (int, int) {
 	sum := a + b
 	mul := a * b
 	return sum, mul

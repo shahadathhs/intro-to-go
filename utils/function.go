@@ -18,14 +18,14 @@ func getUserFullName() string {
 	return name
 }
 
-func getUserAge () int {
+func getUserAge() int {
 	var age int
 	fmt.Println("Please enter your age")
 	fmt.Scanln(&age)
 	return age
 }
 
-func getUserAddress () string {
+func getUserAddress() string {
 	var address string
 	fmt.Println("Please enter your address")
 	fmt.Scanln(&address)
@@ -45,7 +45,7 @@ func goodbyeMessage() {
 
 func Function() {
 	welcomeMessage()
-	
+
 	name := getUserFullName()
 	fmt.Println("Your full name is", name)
 
@@ -54,7 +54,7 @@ func Function() {
 
 	address := getUserAddress()
 	fmt.Println("Your address is", address)
-	
+
 	printUserData(name, age, address)
 
 	goodbyeMessage()
