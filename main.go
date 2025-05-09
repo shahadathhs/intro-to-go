@@ -1,20 +1,22 @@
 package main
 
-import "fmt"
+import "intro-to-go/utils"
 
-func sum(a int, b int) int {
-	return a + b
-}
+// import "fmt"
 
-func getNumbers (a int, b int) (int, int) {
-	sum := a + b
-	mul := a * b
-	return sum, mul
-}
+// func sum(a int, b int) int {
+// 	return a + b
+// }
 
-func printSomething() {
-	fmt.Println("Hello World")
-}
+// func getNumbers (a int, b int) (int, int) {
+// 	sum := a + b
+// 	mul := a * b
+// 	return sum, mul
+// }
+
+// func printSomething() {
+// 	fmt.Println("Hello World")
+// }
 
 func main() {
 	// fmt.Println("Hello World")
@@ -95,18 +97,19 @@ func main() {
 	// 	fmt.Println("default")
 	// }
 
-	a := 1
-	b := 2
-	c := 3
-	d := 4
+	// a := 1
+	// b := 2
+	// c := 3
+	// d := 4
 
-	fmt.Println(sum(a, b))
+	// fmt.Println(sum(a, b))
 
-	sum2 := sum(c, d)
-	fmt.Println(sum2)
+	// sum2 := sum(c, d)
+	// fmt.Println(sum2)
 
-	sum, mul := getNumbers(a, b)
-	fmt.Println(sum, mul)
+	// sum, mul := getNumbers(a, b)
+	// fmt.Println(sum, mul)
+	// printSomething()
 
-	printSomething()
+	utils.Function()
 }
