@@ -2,6 +2,20 @@ package utils
 
 import "fmt"
 
+func total(x int, y int) {
+	fmt.Println(x + y)
+}
+
+func higherOrderFunction(x int, y int, op func(int, int)) {
+	op(x, y)
+}
+
+func callFunction() {
+	func() {
+		fmt.Println("Anonymous Function called")
+	}()
+}
+
 func TypesOfFunction() {
 	a := 1
 
@@ -13,9 +27,15 @@ func TypesOfFunction() {
 	// 	fmt.Println("IIFE Function called", num)
 	// })(100)
 
-	f := func() {
-		fmt.Println("Anonymous Function called using function expression", a)
-	}
+	// f := func() {
+	// 	fmt.Println("Anonymous Function called using function expression", a)
+	// }
 
-	f()
+	// f()
+
+	// total(a, 2)
+
+	higherOrderFunction(a, 2, total)
+
+	callFunction()
 }
