@@ -6,11 +6,18 @@ import "fmt"
 // 	"intro-to-go/utils"
 // )
 
-var a = 1
+const a = 1
 
-func add(x int, y int) {
-	z := x + y
-	fmt.Println(z)
+var b = 2
+
+func call() {
+	add := func(x int, y int) {
+		z := x + y
+		fmt.Println(z)
+	}
+
+	add(2, 3)
+	add(a, b)
 }
 
 func main() {
@@ -18,9 +25,11 @@ func main() {
 	// utils.Function()
 	// utils.Scope()
 	// utils.TypesOfFunction()
+	a := 2
 
-	add(2, 3)
-	add(a, 2)
+	fmt.Println(a)
+
+	call()
 }
 
 // func init() {

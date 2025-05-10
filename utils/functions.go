@@ -16,6 +16,11 @@ func callFunction() {
 	}()
 }
 
+// func add(x int, y int) {
+// 	z := x + y
+// 	fmt.Println(z)
+// }
+
 func TypesOfFunction() {
 	a := 1
 
@@ -38,4 +43,7 @@ func TypesOfFunction() {
 	higherOrderFunction(a, 2, total)
 
 	callFunction()
+
+	// add(2, 3)
+	// add(a, 2)
 }
