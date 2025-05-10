@@ -19,6 +19,14 @@ func main() {
 	// }
 
 	fmt.Println("Main Function called", a)
+
+	func() {
+		fmt.Println("Anonymous Function called", a)
+	}()
+
+	(func(num int) {
+		fmt.Println("IIFE Function called", num)
+	})(100)
 }
 
 func init() {
